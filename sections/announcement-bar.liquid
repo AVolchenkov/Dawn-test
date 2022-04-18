@@ -7,7 +7,7 @@
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
               <p class="announcement-bar__message h5">
-                <strong>Hello world!</strong> {{ block.settings.text | escape }}
+                {{ block.settings.text | escape }} <strong>Hello world 2!</strong>
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
