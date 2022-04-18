@@ -4,7 +4,9 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
+        "show_collection_image": true,
+        "collection_image": "shopify:\/\/shop_images\/yellow-banner.jpg",
+        "collection_image_text": "Banner description",
         "color_scheme": "background-1"
       }
     },

@@ -155,6 +155,79 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16502682027cea91ac": {
+      "type": "slideshow",
+      "blocks": {
+        "16502682024ee6d4a5-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/depositphotos_192404672-stock-photo-closeup-of-turquoise-splashing-waves.webp",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "16502682024ee6d4a5-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/depositphotos_199052976-stock-photo-beautiful-view-of-sea-waves.webp",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "01366b58-e2ad-4b30-9abf-7c19331a336e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/depositphotos_6811219-stock-photo-tropical-paradise.webp",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16502682024ee6d4a5-0",
+        "16502682024ee6d4a5-1",
+        "01366b58-e2ad-4b30-9abf-7c19331a336e"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -163,6 +236,7 @@
     "featured_collection",
     "collage",
     "video",
-    "1650097592634b9119"
+    "1650097592634b9119",
+    "16502682027cea91ac"
   ]
 }
