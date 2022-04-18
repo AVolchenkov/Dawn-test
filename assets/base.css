@@ -1240,6 +1240,16 @@ summary::-webkit-details-marker {
   }
 }
 
+.media > .collection-hero__image-text.collection-hero__image-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+}
+
 deferred-media {
   display: block;
 }

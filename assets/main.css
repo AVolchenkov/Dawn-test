@@ -1,0 +1,77 @@
+#popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 6;
+  min-width: 320px;
+  padding: 30px;
+  background: #ccc;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+#popup.hide {
+  opacity: 0;
+}
+
+.popup-container {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.close:before {
+  content: "X";
+  color: #000;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.close:hover:before {
+  color: rgba(0, 76, 252, 0.492);
+}
+
+.product-form__buttons {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.shopify-payment-button {
+  margin-bottom: 1rem;
+}
+
+.template-index slideshow-component {
+  margin: 0 20px;
+  border: 5px solid #ccc;
+}
+
+.template-index .slideshow__controls {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+  border: none;
+}
+
+.template-index .slideshow__controls .slider-button svg {
+  height: 2.6rem;
+}
+
+.template-index .slideshow__controls .slider-counter {
+  display: none;
+}

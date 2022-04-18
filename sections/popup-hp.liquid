@@ -1,0 +1,54 @@
+{% if section.settings.enable %}
+  <div id="popup">
+    <div class="popup-container">
+      {% if section.settings.title != blank %}
+        <h2 class="popup-title">
+          {{ section.settings.title }}
+        </h2>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <div class="popup-text">
+          {{ section.settings.text }}
+        </div>
+      {% endif %}
+      <button class="close" title="Close"></button>
+    </div>
+  </div>
+  <script>
+    var delayBeforeClosing = {{ section.settings.delay_before_closing }};
+  </script>
+  <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Popup",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Enable Popup"
+      },
+      {
+        "type": "range",
+        "id": "delay_before_closing",
+        "label": "Delay before closing",
+        "info": "seconds",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "default": 10
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Description"
+      }
+    ]
+  }
+{% endschema %}

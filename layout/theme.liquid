@@ -190,6 +190,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'main.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -209,7 +210,7 @@
     </script>
   </head>
 
-  <body class="gradient">
+  <body class="gradient{% if template.name == "index" %} template-index {% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -221,6 +222,10 @@
     </main>
 
     {% section 'footer' %}
+
+    {% if template.name == "index" %}
+      {% section 'popup-hp' %}
+    {% endif %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -257,5 +262,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
